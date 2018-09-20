@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/watch_me/watch_me",
+    "pages/news/news"
+  ],
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  }
+  
+}

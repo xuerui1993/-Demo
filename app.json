@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/main/main",
+    "pages/mine/mine",
+    "pages/watch_me/watch_me",
+    "pages/news/news"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#ff0000",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "images/tab_news_icon_s.png",
+        "iconPath": "images/tab_news_icon_n.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tab_watch_icon_s.png",
+        "iconPath": "images/tab_watch_icon_n.png",
+        "pagePath": "pages/watch_me/watch_me",
+        "text": "一元投"
+      },
+      {
+        "selectedIconPath": "images/tab_my_login_icon_s.png",
+        "iconPath": "images/tab_my_login_icon_n.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}
