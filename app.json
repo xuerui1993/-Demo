@@ -5,12 +5,12 @@
     "pages/main/main",
     "pages/mine/mine",
     "pages/watch_me/watch_me",
-    "pages/news/news"
+    "pages/news/news",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -28,7 +28,7 @@
         "selectedIconPath": "images/tab_watch_icon_s.png",
         "iconPath": "images/tab_watch_icon_n.png",
         "pagePath": "pages/watch_me/watch_me",
-        "text": "一元投"
+        "text": "谁看过我"
       },
       {
         "selectedIconPath": "images/tab_my_login_icon_s.png",

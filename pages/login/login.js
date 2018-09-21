@@ -1,41 +1,43 @@
-// pages/mine/mine.js
+// pages/login/login.js
 const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
+  setPassword(e){
+    this.password = e.detail.value;
+  },
+  setUserName(e){
+    this.userName = e.detail.value;
+  },
   data: {
-
+    password:'',
+    userName:''
   },
-
-  login: function (event) {
-    console.log(111)
-    wx.navigateTo({
-      url: '../login/login'
-    })
-  },
-
-  goMyCoin(){
-    console.log('跳转到我的海豚币里面')
-  },
-  goAward(){
-    console.log('跳转到推广奖励里面')
+  login(){
+    if(this.userName === 'xuerui' && this.password === '123456'){
+      console.log('登录成功')
+      wx.showToast({
+        title: '登录成功',
+        icon: 'success',
+        duration: 1000,
+        mask: true
+      })
+      app.globalData.refreshFlag ++;
+      wx.navigateBack();
+    }else{
+      console.log('密码错误');
+    }
+    console.log(this.userName);
+    console.log(this.password);
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    getApp().setWatcher(app.globalData, this.watch); // 设置监听器
-  },
 
-  watch: {
-    refreshFlag: function (newValue) {
-        console.log('开始刷新');
-        console.log(newValue);
-    }
   },
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -48,7 +50,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**

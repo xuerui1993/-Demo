@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<view class='contianer'>
+  <view class='item-first'>
+    <image class='item-icon' src='../../images/phone_icon.png'></image>
+    <input class='item-input' maxlength="10" placeholder="请输入账号" auto-focus bindblur='setUserName'/>
+  </view>
+  <view class='item-second'>
+    <image class='item-icon-second' src='../../images/sms_icon.png'></image>
+    <input class='item-input' placeholder="请输入密码" bindblur='setPassword'/>
+  </view>
+  <button class='login-button' bindtap='login'>注册/登录</button>
+</view>

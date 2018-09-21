@@ -1,2 +1,19 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="container">
+  <view class="unlogin-bg" style="background-image: url('../../images/bg_my_unlogin.jpg')">
+    <image class="unlogin-image" src='../../images/my_unlogin_icon.png' style='width =                   "200rpx"'/>
+    <text class="unlogin-text">每次分享就是签单机会</text>
+    <button class="unlogin-button" bindtap="login">注册/登录</button>
+  </view>
+  <view class='divider-wide'></view>
+  <view class="item" bindtap='goMyCoin'>
+    <image class="item-icon" src="../../images/currency_icon.png"></image>
+    <text class="item-text">我的海豚币</text>
+  </view>
+  <view class='divider-wide'></view>
+  <view class="item" bindtap='goAward'>
+    <image class="item-icon" src="../../images/icon_extent_award.png"></image>
+    <text class="item-text">推广奖励</text>
+  </view>
+  <view class='divider-wide'></view>
+</view>
