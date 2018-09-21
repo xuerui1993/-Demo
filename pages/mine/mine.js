@@ -9,6 +9,10 @@ Page({
 
   },
 
+  onPullDownRefresh: function () {
+    console.log('1111');
+  },
+
   login: function (event) {
     console.log(111)
     wx.navigateTo({

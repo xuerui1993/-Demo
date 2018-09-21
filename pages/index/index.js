@@ -9,6 +9,9 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  onPullDownRefresh: function () {
+    console.log('1111');
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
